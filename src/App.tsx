@@ -121,8 +121,7 @@ export default function App() {
         completedDays: [...prev.completedDays, todayKey],
       };
     });
-    showToast('오늘의 20단어 완료! 스트릭 +1');
-  }, [showToast]);
+  }, []);
 
   const handlePin = useCallback((wordId: string) => {
     setState((prev) => {
